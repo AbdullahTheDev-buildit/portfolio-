@@ -7,7 +7,7 @@ import "./globals.css";
 export default function Home() {
   return (
     <>
-      <main className="min-h-screen text-white flex items-center justify-center p-6 pt-0 max-w-4xl mx-auto md:border border-white rounded-xl md:bg-zinc-900/90 md:mt-2">
+      <main className="mt-2 min-h-screen text-white flex items-center justify-center p-6 pt-0 max-w-4xl mx-auto md:border border-white rounded-xl md:bg-zinc-900/90 md:mt-2">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <div className="flex justify-center">
             <Image
@@ -15,7 +15,35 @@ export default function Home() {
               alt="A picture of Abdullah Mohd"
               width={300}
               height={300}
-              className="rounded-full shadow-lg shadow-sky-500/20"
+              className="
+    rounded-full 
+    shadow-2xl 
+    shadow-sky-500/30
+    ring-4 
+    ring-white
+    ring-offset-4 
+    ring-offset-gray-50
+    hover:shadow-sky-400/40
+    hover:ring-sky-200
+    hover:scale-105
+    transition-all 
+    duration-300 
+    ease-in-out
+    border-2
+    border-sky-100
+    backdrop-blur-sm
+    object-cover
+    cursor-pointer
+    group
+    relative
+    overflow-hidden
+    bg-gradient-to-br 
+    from-sky-50 
+    to-blue-50
+  "
+              style={{
+                filter: 'brightness(1.05) contrast(1.1) saturate(1.1)',
+              }}
             />
           </div>
 
@@ -33,7 +61,7 @@ export default function Home() {
                 animate={{ y: 0 }}
                 exit={{ y: "-120%" }}
                 staggerDuration={0.025}
-                splitLevelClassName="overflow-hidden pb-0.5 sm:pb-1 md:pb-1"
+                splitLevelClassName="overflow-hidden pb-0.5 sm:pb-1 md:pb-0"
                 transition={{ type: "spring", damping: 30, stiffness: 400 }}
                 rotationInterval={2000}
               />
