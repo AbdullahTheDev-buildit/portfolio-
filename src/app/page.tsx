@@ -2,6 +2,7 @@ import Image from "next/image";
 import RotatingText from "./components/ui/RotatingText";
 import EducationSection from "./components/educationSection";
 import ExperienceSection from "./components/experianceSection";
+import SkillsSection from "./components/skillSection";
 import "./globals.css";
 
 export default function Home() {
@@ -87,6 +88,7 @@ export default function Home() {
           </div>
         </div>
       </main>
+      <SkillsSection />
       <EducationSection />
       <ExperienceSection />
     </>
