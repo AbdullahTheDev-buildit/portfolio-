@@ -20,7 +20,7 @@ export default function Home() {
 
         <div>
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
-            Hi, I'm Abdullah Mohd 👋
+            Hi, I&apos;m Abdullah Mohd 👋
           </h1>
           <h2 className="text-2xl md:text-3xl text-sky-400 mb-6 font-semibold">
             A Passionate

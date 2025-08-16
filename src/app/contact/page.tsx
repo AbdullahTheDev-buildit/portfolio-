@@ -1,5 +1,4 @@
 import { socialLinks } from "../data/socials";
-import Link from 'next/link';
 
 export default function ContactPage() {
   const yourEmail = "sahebabdullah7860@gmail.com"; 
@@ -9,7 +8,7 @@ export default function ContactPage() {
       <div className="max-w-2xl w-full text-center">
         <h1 className="text-4xl md:text-6xl font-bold mb-4">Get In Touch</h1>
         <p className="text-lg md:text-xl text-gray-300 mb-8">
-          I'm always open to discussing new projects, creative ideas, or opportunities to be part of an amazing team. Feel free to reach out!
+          I&apos;m always open to discussing new projects, creative ideas, or opportunities to be part of an amazing team. Feel free to reach out!
         </p>
 
         <a

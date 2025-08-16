@@ -8,7 +8,7 @@ export default function EducationSection() {
           My Education
         </h2>
         <div className="relative border-l-2 border-sky-500 ml-4 md:ml-0">
-          
+
           {educationHistory.map((entry, index) => (
             <div key={entry.id} className="mb-12 pl-8 relative">
               
