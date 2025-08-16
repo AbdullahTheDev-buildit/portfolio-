@@ -38,9 +38,7 @@ export default function Home() {
             />
             </h2>
           <p className="text-lg text-gray-300 leading-relaxed">
-            I build beautiful, responsive, and performant applications. From
-            front-end aesthetics to back-end logic, I love turning complex
-            problems into elegant digital experiences.
+            I build fast, reliable, and visually engaging applications tailored to client needs. With expertise across both front-end aesthetics and back-end systems, I transform complex challenges into smooth, functional, and user-friendly digital experiences. As a freelancer, I focus on delivering quality, performance, and results that exceed expectations.
           </p>
         </div>
       </div>
