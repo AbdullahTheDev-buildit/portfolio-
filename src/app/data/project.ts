@@ -19,7 +19,7 @@ export const projects: Project[] = [
   },
   {
     id: 2,
-    name: "College Admission App",
+    name: "College Admission App (Freelance)",
     description:
       "Mobile app for streamlining my college's admission process, enabling admin staff to manage inquiries, registrations, and admission data efficiently.",
     tech: ["React Native", "Expo", "Supabase"],
