@@ -7,7 +7,7 @@ import {Squares} from "./components/ui/bgAnimation";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "My Portfolio",
+  title: "Abdullah Mohd",
   description:
     "portfolio of Abdullah Mohd — a showcase of my work as a developer",
 };

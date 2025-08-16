@@ -39,22 +39,22 @@ export default function Home() {
               />
             </h2>
             <p className="text-lg text-gray-300 leading-relaxed">
-  I build <span className="text-sky-400 font-semibold">fast</span>, 
-  <span className="text-sky-400 font-semibold"> reliable</span>, and 
-  <span className="text-sky-400 font-semibold"> visually engaging</span> applications 
-  <span className="text-sky-400 font-semibold"> tailored</span> to client needs. 
-  With expertise across both <span className="text-sky-400 font-semibold">front-end aesthetics</span> 
-  and <span className="text-sky-400 font-semibold">back-end systems</span>, I 
-  <span className="text-sky-400 font-semibold"> transform complex challenges</span> into 
-  <span className="text-sky-400 font-semibold"> smooth</span>, 
-  <span className="text-sky-400 font-semibold"> functional</span>, and 
-  <span className="text-sky-400 font-semibold"> user-friendly</span> digital experiences. 
-  As a <span className="text-sky-400 font-semibold">freelancer</span>, I focus on delivering 
-  <span className="text-sky-400 font-semibold"> quality</span>, 
-  <span className="text-sky-400 font-semibold"> performance</span>, and 
-  <span className="text-sky-400 font-semibold"> results</span> that 
-  <span className="text-sky-400 font-semibold"> exceed expectations</span>.
-</p>
+              I build <span className="text-sky-400 font-semibold">fast</span>,
+              <span className="text-sky-400 font-semibold"> reliable</span>, and
+              <span className="text-sky-400 font-semibold"> visually engaging</span> applications
+              <span className="text-sky-400 font-semibold"> tailored</span> to client needs.
+              With expertise across both <span className="text-sky-400 font-semibold">front-end aesthetics</span>
+              and <span className="text-sky-400 font-semibold">back-end systems</span>, I
+              <span className="text-sky-400 font-semibold"> transform complex challenges</span> into
+              <span className="text-sky-400 font-semibold"> smooth</span>,
+              <span className="text-sky-400 font-semibold"> functional</span>, and
+              <span className="text-sky-400 font-semibold"> user-friendly</span> digital experiences.
+              As a <span className="text-sky-400 font-semibold">freelancer</span>, I focus on delivering
+              <span className="text-sky-400 font-semibold"> quality</span>,
+              <span className="text-sky-400 font-semibold"> performance</span>, and
+              <span className="text-sky-400 font-semibold"> results</span> that
+              <span className="text-sky-400 font-semibold"> exceed expectations</span>.
+            </p>
 
           </div>
         </div>
