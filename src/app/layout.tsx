@@ -24,7 +24,7 @@ export default function RootLayout({
           <Squares
             speed={0.5}
             squareSize={40}
-            direction="down" // up, down, left, right, diagonal
+            direction="down"
             borderColor="#00e6e6"
             hoverFillColor="#222"
           />
