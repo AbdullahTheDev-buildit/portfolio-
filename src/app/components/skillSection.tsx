@@ -1,7 +1,6 @@
 import { skills } from '../data/skill';
 
 export default function SkillsSection() {
-
   const groupedSkills = skills.reduce((acc, skill) => {
     const { category } = skill;
     if (!acc[category]) {
@@ -12,23 +11,26 @@ export default function SkillsSection() {
   }, {} as Record<string, typeof skills>);
 
   return (
-    <section className="py-16 md:py-12 bg-transparent text-white max-w-4xl mx-auto md:border border-white rounded-xl md:bg-zinc-900/90 md:mt-10">
+    <section className="py-8 md:py-10 bg-transparent text-white max-w-4xl mx-auto">
       <div className="max-w-4xl mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-          My Skills
+        <h2 className="text-2xl md:text-3xl font-bold text-center mb-8 text-sky-400">
+          Tech Stack
         </h2>
         
-        <div className="space-y-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {Object.entries(groupedSkills).map(([category, skillsInCategory]) => (
-            <div key={category}>
-              <h3 className="text-xl md:text-2xl font-semibold text-sky-400 mb-6">
+            <div key={category} className="bg-zinc-900/60 backdrop-blur-sm border border-zinc-800 rounded-lg p-4">
+              <h3 className="text-sm font-semibold text-zinc-400 mb-3 uppercase tracking-wide">
                 {category}
               </h3>
-              <div className="flex flex-wrap gap-4">
+              <div className="flex flex-wrap gap-2">
                 {skillsInCategory.map((skill) => (
-                  <div key={skill.name} className="bg-gray-800 text-gray-300 px-4 py-2 rounded-lg shadow-md hover:shadow-sky-500/20 transition-shadow">
+                  <span 
+                    key={skill.name} 
+                    className="bg-zinc-800/70 text-zinc-300 px-2 py-1 rounded text-sm font-medium hover:bg-sky-500/20 hover:text-sky-300 transition-colors"
+                  >
                     {skill.name}
-                  </div>
+                  </span>
                 ))}
               </div>
             </div>

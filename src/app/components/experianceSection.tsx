@@ -2,29 +2,43 @@ import { workExperience } from '../data/experiance';
 
 export default function ExperienceSection() {
   return (
-    <section className="py-16 md:py-12 bg-transparent text-white max-w-4xl mx-auto md:border border-white rounded-xl md:bg-zinc-900/90 md:mt-10">
+    <section className="py-8 md:py-10 bg-transparent text-white max-w-4xl mx-auto">
       <div className="max-w-4xl mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-          Work Experience
+        <h2 className="text-2xl md:text-3xl font-bold text-center mb-8 text-sky-400">
+          Experience
         </h2>
-
-        <div className="relative border-l-2 border-sky-500 ml-4 md:ml-0">
+        
+        <div className="grid gap-4">
           {workExperience.map((entry) => (
-            <div key={entry.id} className="mb-12 pl-8 relative">
+            <div key={entry.id} className="bg-zinc-900/60 backdrop-blur-sm border border-zinc-800 rounded-lg p-4 hover:border-zinc-700 transition-colors">
+              <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-3">
+                <div className="flex-1">
+                  <h3 className="text-lg font-semibold text-white mb-1">
+                    {entry.role}
+                  </h3>
+                  <p className="text-sky-300 font-medium mb-1">{entry.company}</p>
+                  <p className="text-sm text-zinc-400">{entry.location}</p>
+                </div>
+                <div className="mt-2 md:mt-0">
+                  <span className="text-sm text-zinc-400 bg-zinc-800/50 px-2 py-1 rounded">
+                    {entry.period}
+                  </span>
+                </div>
+              </div>
               
-              <div className="absolute -left-2.5 top-1.5 w-5 h-5 bg-sky-500 rounded-full border-4 border-gray-900"></div>
-
-              <p className="text-gray-400 mb-1">{entry.period}</p>
-              <h3 className="text-xl md:text-2xl font-bold text-sky-400">
-                {entry.role}
-              </h3>
-              <h4 className="text-lg text-gray-200 mb-3">{entry.company}</h4>
-              
-              <ul className="list-disc list-inside text-white space-y-2">
-                {entry.responsibilities.map((detail, i) => (
-                  <li key={i}>{detail}</li>
-                ))}
-              </ul>
+              <div className="mt-3">
+                <div className="grid gap-2">
+                  {entry.responsibilities.map((responsibility, i) => (
+                    <div 
+                      key={i}
+                      className="flex items-start gap-2 text-sm text-zinc-300"
+                    >
+                      <span className="w-1.5 h-1.5 bg-sky-400 rounded-full mt-2 flex-shrink-0"></span>
+                      <span>{responsibility}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
             </div>
           ))}
         </div>
