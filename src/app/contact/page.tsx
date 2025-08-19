@@ -4,7 +4,7 @@ export default function ContactPage() {
   const yourEmail = "sahebabdullah7860@gmail.com"; 
 
   return (
-    <main className="min-h-screen bg-transparent text-white flex items-center justify-center p-8 max-w-4xl mx-auto md:border border-white rounded-xl md:bg-zinc-900/90 mt-10">
+    <main className="min-h-screen bg-transparent text-white flex items-center justify-center p-8 max-w-4xl mx-auto md:border border-white rounded-xl md:bg-zinc-900/90 pt-0">
       <div className="max-w-2xl w-full text-center">
         <h1 className="text-4xl md:text-6xl font-bold mb-4">Get In Touch</h1>
         <p className="text-lg md:text-xl text-gray-300 mb-8">
