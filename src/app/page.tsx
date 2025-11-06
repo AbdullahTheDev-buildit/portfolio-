@@ -88,9 +88,10 @@ export default function Home() {
           </div>
         </div>
       </main>
+      <ExperienceSection />
       <SkillsSection />
       <EducationSection />
-      <ExperienceSection />
+      
     </>
   );
 }
